@@ -1,9 +1,12 @@
 import React from "react";
+import Banner from "../components/Banner";
+import TabCategory from "../components/TabCategory";
 
 const Home = () => {
   return (
     <div>
-      <h1>home</h1>
+      <Banner />
+      <TabCategory />
     </div>
   );
 };
