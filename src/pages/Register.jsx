@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Register = () => {
-  const { handelRegister, manageProfile } = useContext(AuthContext);
+  const { handleRegister, manageProfile } = useContext(AuthContext);
   const [error, setError] = useState("");
 
   const handelSinUp = (e) => {
@@ -32,7 +32,7 @@ const Register = () => {
       return;
     }
 
-    handelRegister(email, password)
+    handleRegister(email, password)
       .then((res) => {
         manageProfile(name, photoUrl);
         console.log("Registration successful:", res);
